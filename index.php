@@ -15,7 +15,7 @@ $pikachu =  new pikachu ('Mitchel');
  
  print_r('<pre>'. $pikachu . '</pre>');
 
-$charmeleon =  new charmeleon('Charmy');
+$charmeleon =  new charmeleon('Charmy') ;
  
 print_r('<pre>'. $charmeleon . '</pre>');
 
