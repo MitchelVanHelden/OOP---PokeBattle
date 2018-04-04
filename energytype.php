@@ -1,14 +1,12 @@
 <?php
-class EnergyType{
-	
 
-	public function __construct($name)
+	class EnergyType 
 	{
-		$this->name = $name;		
-	}
+		public $name;
 
-	public function __toString() {
-      	  return json_encode($this) ;
-   		 }
-	
-}
+		public function __construct($name)
+		{
+			$this->name = $name;
+		}
+	}
+?>

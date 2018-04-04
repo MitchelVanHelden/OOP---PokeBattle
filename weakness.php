@@ -1,13 +1,14 @@
 <?php
-class Weakness{
-	
 
-	public function __construct($name)
+	class Weakness
 	{
-		$this->name = $name;	
-	}
+		public $energyType;
+		public $multiplier = 0;
 
-	public function __toString() {
-      	  return json_encode($this);
-   		 }
-}
+		public function __construct($energyType, $multiplier)
+		{
+			$this->energyType = $energyType;
+			$this->multiplier = $multiplier;
+		}
+	}
+?>

@@ -7,19 +7,18 @@ require 'weakness.php';
 require 'resistance.php';
 require 'energytype.php';
 require 'attacks.php';
-require 'hitpoints.php';
-require 'health.php';
 
 
-$pikachu =  new pikachu ('Mitchel');
- 
- print_r('<pre>'. $pikachu . '</pre>');
 
-$charmeleon =  new charmeleon('Charmy') ;
- 
-print_r('<pre>'. $charmeleon . '</pre>');
+	$pikachu = new Pikachu('Pika');
+	$charmeleon = new Charmeleon('Charmelie');
 
-
+	
+	$pikachu->attack($pikachu->attacks[0], $charmeleon);
+	$charmeleon->attack($charmeleon->attacks[1], $pikachu);
+	
+	
+	
 
 
  ?>

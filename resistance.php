@@ -1,13 +1,14 @@
 <?php
-class Resistance{
-	
 
-	public function __construct($name)
+	class Resistance
 	{
-		$this->name = $name;		
-	}
+		public $energyType;
+		public $worth = 0;
 
-	public function __toString() {
-      	  return json_encode($this);
-   		 }
-}
+		public function __construct($energyType, $worth)
+		{
+			$this->energyType = $energyType;
+			$this->worth = $worth;
+		}
+	}
+?>

@@ -1,15 +1,18 @@
 <?php
 
-class charmeleon extends pokemon{
+	class Charmeleon extends Pokemon
+	{	
 
-    
-    
-	public function __construct($name)
-    {
-      parent::__construct($name, new EnergyType ('fire'), new Weakness ('water'), new Resistance('lightning'), [new Attacks ('Head Butt'), ('Flare')], new hitpoints (60));
-    }	 
-
-}
-
-
+		public function __construct($name)
+		{
+			$name = $name;
+			$energyType = new EnergyType('Fire');
+			$hitpoints = 60;
+			$attacks = [new Attack('headButt', 10), new Attack('Flare', 30)];
+			$weakness = new Weakness(new EnergyType('Water'), 2);
+			$resistance = new Resistance(new EnergyType('Lighting'), 10);
+			
+			parent::__construct($name, $energyType, $hitpoints, $attacks, $weakness, $resistance);
+		}
+	}
 ?>
